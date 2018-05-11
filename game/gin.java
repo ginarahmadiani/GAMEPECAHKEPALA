@@ -1,20 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class gin here.
+ * A blue balloon. Adds 20 to the player's score.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Michael Berry
+ * @version 29/05/08
  */
-public class gin extends Actor
+public class gin extends kepal
 {
+
     /**
-     * Act - do whatever the gin wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Adds 20 to the player's score when hit.
      */
     public void act() 
     {
-        // Add your action code here.
-        setLocation(getX(),getY()-2);
+        super.act(20, 100);
     }    
 }
