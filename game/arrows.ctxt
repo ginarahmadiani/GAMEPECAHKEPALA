@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=arrows
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ arrows\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment1.text=\r\n\ Sets\ up\ the\ player\ with\ 50\ arrows\ initially.\r\n
+comment2.params=num
+comment2.target=void\ add(int)
+comment2.text=\r\n\ Add\ arrows.\ If\ the\ number\ of\ arrows\ exceeds\ the\ maximum\ allowed,\ don't\ add\ any\ more.\r\n
+comment3.params=
+comment3.target=int\ getNum()
+comment3.text=\r\n\ Return\ the\ number\ of\ arrows.\r\n
+numComments=4

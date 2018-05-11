@@ -38,5 +38,14 @@ public class bermain extends World
         addObject(gin3,20,389);
         mang mang3 = new mang();
         addObject(mang3,50,388);
+        bom bom = new bom();
+        addObject(bom,744,395);
+        bom bom2 = new bom();
+        addObject(bom2,393,399);
+        bom2.setLocation(394,375);
+        bom bom3 = new bom();
+        addObject(bom3,335,399);
+        bom bom4 = new bom();
+        addObject(bom4,5,340);
     }
 }
