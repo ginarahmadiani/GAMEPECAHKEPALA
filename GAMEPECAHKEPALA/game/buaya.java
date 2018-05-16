@@ -18,7 +18,6 @@ public class buaya extends Actor
         KeyboardControls();
         eatgin();
         eatmang();
-        eatbom();
         
     }
     public void KeyboardControls(){
@@ -42,7 +41,6 @@ public class buaya extends Actor
         if(isTouching(gin.class)){
         removeTouching(gin.class);
         MyWorld myw1  = (MyWorld) getWorld();
-        myw1.updSkor(10);
         }
     }
     public void eatmang(){
@@ -50,13 +48,8 @@ public class buaya extends Actor
         removeTouching(mang.class);   
         }
     }
-    public void eatbom(){
-        if(isTouching(bom.class)){
-        removeTouching(bom.class);
-        Greenfoot.stop();
-        Greenfoot.setWorld(new gameover)();
-    }
-  }
+    
+  
 }
 
 

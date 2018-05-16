@@ -20,8 +20,7 @@ public class bom extends Actor
         setLocation(getX(),getY()-1);
         if(isAtEdge())
         {
-            //
-            setLocation(600,getX());
+            w.removeObject(this);
           
         }
     }

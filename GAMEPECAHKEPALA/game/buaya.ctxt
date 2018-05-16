@@ -9,6 +9,4 @@ comment3.params=
 comment3.target=void\ eatgin()
 comment4.params=
 comment4.target=void\ eatmang()
-comment5.params=
-comment5.target=void\ eatbom()
-numComments=6
+numComments=5
