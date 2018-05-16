@@ -22,6 +22,10 @@ public class gin extends Actor
         {
             //w.removeObject(this);
             setLocation(590,getX());
+            
+            
         }
-    }    
+   }
+   
 }
+

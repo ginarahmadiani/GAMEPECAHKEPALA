@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class bermain extends World
 {
-
+private int skorbuaya;
     /**
      * Constructor for objects of class bermain.
      * 
@@ -18,7 +18,7 @@ public class bermain extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 400, 1); 
         prepare();
-    }  
+    }
 
     /**
      * Prepare the world for the start of the program.
@@ -49,5 +49,13 @@ public class bermain extends World
         bom4.setLocation(334,362);
         buaya buaya = new buaya();
         addObject(buaya,179,328);
+    }
+    
+    public int getSkorbuaya(){
+        return skorbuaya;          
+    }
+    
+    public void updSkor(int x){
+        skorbuaya+=x;
     }
 }

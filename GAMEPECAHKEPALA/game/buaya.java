@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class buaya here.
@@ -41,6 +41,8 @@ public class buaya extends Actor
     public void eatgin(){
         if(isTouching(gin.class)){
         removeTouching(gin.class);
+        MyWorld myw1  = (MyWorld) getWorld();
+        myw1.updSkor(10);
         }
     }
     public void eatmang(){
@@ -51,6 +53,8 @@ public class buaya extends Actor
     public void eatbom(){
         if(isTouching(bom.class)){
         removeTouching(bom.class);
+        Greenfoot.stop();
+        Greenfoot.setWorld(new gameover)();
     }
   }
 }
