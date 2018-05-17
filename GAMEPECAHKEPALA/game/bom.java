@@ -21,6 +21,8 @@ public class bom extends Actor
         if(isAtEdge())
         {
             w.removeObject(this);
+            
+            
           
         }
     }
