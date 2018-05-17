@@ -20,8 +20,7 @@ public class mang extends Actor
         setLocation(getX(),getY()-1);
         if(isAtEdge())
         {
-            //w.removeObject(this);
-            setLocation(590,getX());
+            w.removeObject(this);
             
         }
     }    

@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class bermain extends World
 {
-private int skorbuaya;
+    int jeda=100;
+
+    private int skorbuaya;
     /**
      * Constructor for objects of class bermain.
      * 
@@ -57,5 +59,70 @@ private int skorbuaya;
     
     public void updSkor(int x){
         skorbuaya+=x;
+    }
+     public void act(){
+        if(jeda==0){
+            addObject(new bom(),556,587);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
+        
+        if(jeda==0){
+            addObject(new gin(), getWidth()/2,getHeight()/1);
+            jeda=300;
+        }
+        else{
+            jeda--;
+        }
+        
+        if(jeda==0){
+            addObject(new gin(), getWidth()/9,getHeight()/1);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
+        
+        if(jeda==0){
+            addObject(new bom(), getWidth()/9,getHeight()/1);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
+        
+         if(jeda==0){
+            addObject(new gin(),556,587);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
+      
+        
+        if(jeda==0){
+            addObject(new mang(), getWidth()/2,getHeight()/1);
+            jeda=300;
+        }
+        else{
+            jeda--;
+        }
+        
+        if(jeda==0){
+            addObject(new mang(), getWidth()/9,getHeight()/1);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
+        if(jeda==0){
+            addObject(new mang(),615,563);
+            jeda=200;
+        }
+        else{
+            jeda--;
+        }
     }
 }

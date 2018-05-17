@@ -18,7 +18,7 @@ public class buaya extends Actor
         KeyboardControls();
         eatgin();
         eatmang();
-        
+        eatbom();
     }
     public void KeyboardControls(){
     if(Greenfoot.isKeyDown("up")){
@@ -40,12 +40,18 @@ public class buaya extends Actor
     public void eatgin(){
         if(isTouching(gin.class)){
         removeTouching(gin.class);
-        MyWorld myw1  = (MyWorld) getWorld();
+
         }
     }
     public void eatmang(){
         if(isTouching(mang.class)){
         removeTouching(mang.class);   
+        }
+    }
+    
+    public void eatbom(){
+        if(isTouching(bom.class)){
+        removeTouching(bom.class);   
         }
     }
     
