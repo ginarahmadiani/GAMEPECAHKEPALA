@@ -15,5 +15,9 @@ public class keluar extends Actor
     public void act() 
     {
         // Add your action code here.
+        if(Greenfoot.mouseClicked(this)){
+        Greenfoot.stop();
+        System.exit(0);
+    }
     }    
 }
