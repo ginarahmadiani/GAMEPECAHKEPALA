@@ -55,7 +55,13 @@ public class buaya extends Actor
         }
     }
     
-  
+      public void buayaDead()
+    {
+        gameover gameover = new gameover();
+        getWorld().addObject(gameover, getWorld().getWidth()/2,getWorld().getHeight()/2);
+        Greenfoot.stop();
+    }
+    
 }
 
 
