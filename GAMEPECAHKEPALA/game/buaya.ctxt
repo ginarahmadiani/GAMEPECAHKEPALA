@@ -11,6 +11,4 @@ comment4.params=
 comment4.target=void\ eatmang()
 comment5.params=
 comment5.target=void\ eatbom()
-comment6.params=
-comment6.target=void\ buayaDead()
-numComments=7
+numComments=6

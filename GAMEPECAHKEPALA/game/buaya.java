@@ -51,15 +51,11 @@ public class buaya extends Actor
     
     public void eatbom(){
         if(isTouching(bom.class)){
-        removeTouching(bom.class);   
-        }
-    }
-    
-      public void buayaDead()
-    {
+        removeTouching(bom.class);
         gameover gameover = new gameover();
         getWorld().addObject(gameover, getWorld().getWidth()/2,getWorld().getHeight()/2);
         Greenfoot.stop();
+        }
     }
     
 }
