@@ -13,6 +13,19 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    public GreenfootSound music = new GreenfootSound("title theme.mp3");
+    public void started()
+    {
+        music.setVolume(100);
+        music.play();
+    }
+    
+    public void stopped()
+    {
+        music.stop();
+        music.play();
+    }
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
