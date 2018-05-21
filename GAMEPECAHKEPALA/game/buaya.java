@@ -13,14 +13,13 @@ public class buaya extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public int currentRotation = 0;
+    int skor = 0;
     public void act() 
     {
         KeyboardControls();
         eatgin();
         eatmang();
         eatbom();
-        private boolean oldTouchingbom = false;
-        private static boolean dead;
     }
     public void KeyboardControls(){
     if(Greenfoot.isKeyDown("up")){
@@ -37,6 +36,18 @@ public class buaya extends Actor
     currentRotation-=2;
     setRotation(currentRotation);
     }
+    
+    skor();
+        {
+        
+    }
+}
+    public void skor()
+    {
+        if (isTouching(gin.class)){
+            skor++;
+            getWorld().showText("skor="+skor,100,35);
+        }
     }
     
     public void eatgin(){
@@ -53,28 +64,13 @@ public class buaya extends Actor
     
     public void eatbom(){
         if(isTouching(bom.class)){
-        removeTouching(bom.class);   
+        removeTouching(bom.class);
+        gameover gameover = new gameover();
+        getWorld().addObject(gameover, getWorld().getWidth()/2,getWorld().getHeight()/2);
+        Greenfoot.stop();
         }
     }
-    boolean touchingbom = false;{
-        for(Bom bom : getWorld().getObjects(bom.class));
-            if(Math.abs(bom.getX() - getX()) < 40){
-                if(Math.abs(bom.getY() + 30 - getY()) > 37){
-                    dead = true;
-                }
-                touchingbom = true;
-            }
-        }
-        if(!oldTouchingbom && touchingPipe && !dead){
-            Score.add(1);
-        }
-        oldTouchingbom = touchingbom;{
-        if(dead){
-            FlappyWorld myWorld = (FlappyWorld) getWorld();
-            myWorld.gameover();
-            getWorld().removeObject(this);
-        }
-    } 
+
 }
 
 

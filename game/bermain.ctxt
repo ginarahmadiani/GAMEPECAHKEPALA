@@ -1,0 +1,29 @@
+<<<<<<< HEAD:game/bermain.ctxt
+#BlueJ class context
+comment0.target=bermain
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ bermain\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=bermain()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ bermain.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment3.params=
+comment3.target=void\ act()
+numComments=4
+=======
+#BlueJ class context
+comment0.target=bermain
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ bermain\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=bermain()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ bermain.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment3.params=
+comment3.target=int\ getSkorbuaya()
+comment4.params=x
+comment4.target=void\ updSkor(int)
+numComments=5
+>>>>>>> cdd7f77ffc6a7c76f7259e1454d2f6489292bf52:GAMEPECAHKEPALA/game/bermain.ctxt

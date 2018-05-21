@@ -52,6 +52,13 @@ public class bermain extends World
         bom4.setLocation(334,362);
         buaya buaya = new buaya();
         addObject(buaya,179,328);
+        kembali kembali = new kembali();
+        addObject(kembali,-15,-19);
+        kembali.setLocation(406,102);
+        removeObject(kembali);
+        kembali kembali2 = new kembali();
+        addObject(kembali2,33,31);
+        kembali2.setLocation(28,26);
     }
     
     public int getSkorbuaya(){
