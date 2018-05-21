@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class bermain extends World
 {
     int jeda=100;
+    
 
     private int skorbuaya;
     /**
@@ -124,5 +125,8 @@ public class bermain extends World
         else{
             jeda--;
         }
+    }
+    public void gameover(){
+        addObject(new gameover(), 300, 200);
     }
 }
